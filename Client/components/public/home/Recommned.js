@@ -19,7 +19,7 @@ export const Recommend = () => {
 }
 
 const CardContainer = styled.div`
-  margin-top: 20em;
+  margin-top: 7em;
   height: auto;
   display: grid;
   gap: 5rem;

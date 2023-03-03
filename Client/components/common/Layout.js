@@ -6,6 +6,7 @@ import Modal from './Modal'
 import { GlobalContext } from '@/context/GlobalContext'
 import { useContext } from 'react'
 import { LoginModal } from '../public/LoginModal'
+import Carousel from '../common/Carousel/Carousel';
 
 const Layout = ({ children }) => {
   const { contextDataGlobal, setContextDataGlobal } = useContext(GlobalContext)
@@ -23,6 +24,7 @@ const Layout = ({ children }) => {
         <LoginModal />
       </Modal>
       <Navbar />
+      <Carousel/>
       <AnimatePresence mode="wait">{children}</AnimatePresence>
       <Footer />
     </PageContainer>

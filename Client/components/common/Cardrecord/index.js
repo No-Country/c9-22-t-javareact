@@ -1,6 +1,6 @@
 import Tilt from 'react-parallax-tilt'
 import img1 from '@/public/images/pc.png'
-import Image from 'next/image'
+import Image from 'next/image' 
 import { Button } from '../Button'
 import {
   CardWrapper,
