@@ -1,22 +1,19 @@
 import * as React from 'react';
 import { useState } from 'react';
 import styled from 'styled-components';
-import Image from 'next/image';
-import home1 from '@/public/images/Home1-1920.png'
 import { motion, AnimatePresence } from 'framer-motion';
 import { wrap } from 'popmotion';   
 
-console.log(<Image src={home1}/>)
 
 const images = [
   { 
-    src: <Image src={home1} />,
+    src: 'http://ecommerce.spartan.images.s3.us-east-2.amazonaws.com/1677858678899Home%201-%201920.png',
   },
   {
-    src: 'https://d33wubrfki0l68.cloudfront.net/49de349d12db851952c5556f3c637ca772745316/cfc56/static/images/wallpapers/bridge-02@2x.png',
+    src: 'http://ecommerce.spartan.images.s3.us-east-2.amazonaws.com/1677858709317Home%202-%201920.png',
   },
   {
-    src: 'https://d33wubrfki0l68.cloudfront.net/594de66469079c21fc54c14db0591305a1198dd6/3f4b1/static/images/wallpapers/bridge-01@2x.png',
+    src: 'http://ecommerce.spartan.images.s3.us-east-2.amazonaws.com/1677858951258Home%203-%201920.png',
   },
 ];
 
@@ -109,8 +106,7 @@ export default Carousel;
 
 const ContainerCarousel = styled.div`
   width: 100vw;
-  height: 100vh;
-  background: #151515;
+  height: 45vh;
   overflow: hidden;
   padding: 0;
   margin-top: 14rem;
