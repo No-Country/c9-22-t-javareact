@@ -2,7 +2,7 @@ import * as React from 'react';
 import { useState } from 'react';
 import styled from 'styled-components';
 import { motion, AnimatePresence } from 'framer-motion';
-import { wrap } from 'popmotion';   
+import { wrap } from 'popmotion';
 
 
 const images = [
@@ -81,7 +81,7 @@ const Carousel = () => {
           drag="x"
           dragConstraints={{ left: 0, right: 0 }}
           dragElastic={1}
-          onDragEnd={(e, { offset, velocity }) => {
+          onDragEnd={( { offset, velocity }) => {
             const swipe = swipePower(offset.x, velocity.x);
             if (swipe < -swipeConfidenceThreshold) {
               paginate(1);
@@ -96,8 +96,8 @@ const Carousel = () => {
       </div>
       <div className="prev" onClick={() => paginate(-1)}>
         {'‣'}
-    </div>
-    </ContainerCarousel>
+      </div>
+      </ContainerCarousel>
     </>
   );
 };
@@ -106,7 +106,7 @@ export default Carousel;
 
 const ContainerCarousel = styled.div`
   width: 100vw;
-  height: 45vh;
+  height: 40vh;
   overflow: hidden;
   padding: 0;
   margin-top: 14rem;
