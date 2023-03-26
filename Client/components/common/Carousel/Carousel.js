@@ -2,7 +2,7 @@ import * as React from 'react';
 import { useState } from 'react';
 import styled from 'styled-components';
 import { motion, AnimatePresence } from 'framer-motion';
-import { wrap } from 'popmotion'
+import { wrap } from 'popmotion';
 
 
 const images = [
@@ -61,7 +61,7 @@ const Carousel = () => {
   const paginate = (newDirection) => {
     setPage([page + newDirection, newDirection]);
   };
-
+//Configuracion de motion
   return (
     <>
       <ContainerCarousel>
